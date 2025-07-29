@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meme Generator AI - BH(Ullr)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Meme Generator AI</h1>
+
+  <input type="file" id="imageUpload" accept="image/*"><br>
+  <input type="text" id="caption" placeholder="Nhập caption..."><br>
+  <select id="fontSelect">
+    <option value="Impact">Impact</option>
+    <option value="Comic Sans MS">Comic Sans MS</option>
+    <option value="Anton">Anton</option>
+    <option value="Roboto">Roboto</option>
+    <option value="VT323">VT323</option>
+  </select><br>
+  <button onclick="generateMeme()">Tạo meme</button>
+  <button onclick="downloadMeme()">Tải meme</button><br>
+
+  <canvas id="memeCanvas" width="500" height="500"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
